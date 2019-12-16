@@ -2,8 +2,24 @@ import java.util.ArrayList;
 
 public class Student {
 
-    long id = 0;
-    String name = "name";
-    ArrayList<Integer> grades = new ArrayList<Integer>();
+   private long id;
+   private String name;
+   private  ArrayList<Integer> grades;
+
+
+   public Student (long id, String name){
+    this.id = id;
+    this.name = name;
+    this.grades = new ArrayList<Integer>();
+
+   }
+
+   public long getId();
+
+   public String getName();
+
+   public void addGrade(int grade);
+
+   public double getGradeAverage();
 
 }
